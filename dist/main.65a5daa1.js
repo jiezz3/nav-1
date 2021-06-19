@@ -116,7 +116,7 @@ var removeHttp = function removeHttp(url) {
 var render = function render() {
     $siteList.find('li:not(.last)').remove();
     hashMap.forEach(function (node, index) {
-        var $li = $('\n    <li>\n        <div class="site">\n            <div class="logo">\n                ' + removeHttp(node.url)[0] + '\n            </div>\n            <div class="link">' + removeHttp(node.url) + '</div>\n            <div class="close">\n            <svg class="icon">\n                            <use par:href="#icon-close"></use>\n                        </svg>\n            </div>\n        </div>\n</li>\n').insertBefore($lastLi);
+        var $li = $('\n    <li>\n        <div class="site">\n            <div class="logo">\n                ' + removeHttp(node.url)[0] + '\n            </div>\n            <div class="link">' + removeHttp(node.url) + '</div>\n            <div class="close">\n            <svg class="icon">\n            <use xlink:href="#icon-close"></use>\n        </svg>\n            </div>\n        </div>\n</li>\n').insertBefore($lastLi);
         $li.on('click', function (e) {
             window.open(node.url);
         });
@@ -156,4 +156,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.ac6e52bb.map
+//# sourceMappingURL=main.65a5daa1.map

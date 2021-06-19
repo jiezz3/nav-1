@@ -22,8 +22,8 @@ const render = () => {
             <div class="link">${removeHttp(node.url)}</div>
             <div class="close">
             <svg class="icon">
-                            <use par:href="#icon-close"></use>
-                        </svg>
+            <use xlink:href="#icon-close"></use>
+        </svg>
             </div>
         </div>
 </li>
