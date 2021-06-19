@@ -124,7 +124,8 @@ background: white;
      flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px
+    padding: 20px;
+    cursor: pointer;
 
 }
 .siteList  .addButton .icon-wrapper{
