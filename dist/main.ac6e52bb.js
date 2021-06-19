@@ -108,7 +108,7 @@ var $siteList = $('.siteList');
 var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
-var hashMap = xObject || [{ logo: removeHttp(url), url: 'https://www.acfun.cn' }, { logo: removeHttp(url), url: 'https://www.bilibili.com' }];
+var hashMap = xObject || [{ logo: 'A', url: 'https://www.acfun.cn' }, { logo: 'B', url: 'https://www.bilibili.com' }];
 var removeHttp = function removeHttp(url) {
     return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, '');
 };
@@ -156,4 +156,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.cf5bdd7e.map
+//# sourceMappingURL=main.ac6e52bb.map
